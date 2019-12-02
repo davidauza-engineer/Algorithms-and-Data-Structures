@@ -12,5 +12,5 @@ This repository contains all the coding challenges solved while being a Microver
 
 Challenge | Objective-C | Ruby | Java | JavaScript |
 ----------|:-----------:|:----:|:----:|:----------:|
-[1. FizzBuzz](./HackerRank/FizzBuzz) | [View](./HackerRank/FizzBuzz/main.m) | [View](./HackerRank/FizzBuzz/main.rb) | [View](./HackerRank/FizzBuzz/Main.java) | [View](./HackerRank/FizzBuzz/main.js) |
+[1. FizzBuzz](./HackerRank/FizzBuzz) | [main.m](./HackerRank/FizzBuzz/main.m) | [main.rb](./HackerRank/FizzBuzz/main.rb) | [Main.java](./HackerRank/FizzBuzz/Main.java) | [main.js](./HackerRank/FizzBuzz/main.js) |
 
