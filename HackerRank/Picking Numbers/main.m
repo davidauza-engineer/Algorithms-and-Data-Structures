@@ -61,10 +61,16 @@
     array = [array sortedArrayUsingSelector:@selector(compare:)];
     int arrayLength = [array count];
     int maxSubArrayLength = 0;
+    int previousNumber = -1;
     for (int i = 0; i < arrayLength; i++) {
+        int currentNumber = [array[i] intValue];
+        if (currentNumber == previousNumber) {
+            continue;
+        }
+        previousNumber = i;
         int tempMaxSubArrayLength = 0;
         for (int j = i + 1; j < arrayLength; j++) {
-            int difference = abs([array[i] intValue] - [array[j] intValue]);
+            int difference = abs(currentNumber - [array[j] intValue]);
             if (difference <= 1) {
                 if (tempMaxSubArrayLength == 0) {
                     tempMaxSubArrayLength += 2;
@@ -122,3 +128,4 @@ int main(int argc, const char* argv[]) {
 
     return 0;
 }
+
