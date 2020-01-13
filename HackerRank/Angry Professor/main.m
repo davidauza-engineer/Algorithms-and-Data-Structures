@@ -37,14 +37,14 @@
 - (NSString *) angryProfessor:(NSNumber *)minimumStudents a:(NSArray *)arrivalsArray {
     int studentsOnTime = 0;
     for (NSNumber *arrival in arrivalsArray) {
-      if ([arrival intValue] <= 0) {
-        studentsOnTime++;
-      }
+        if ([arrival intValue] <= 0) {
+            studentsOnTime++;
+        }
     }
     if (studentsOnTime < [minimumStudents intValue]) {
-      return @"YES";
+        return @"YES";
     } else {
-      return @"NO";
+        return @"NO";
     }
 }
 
