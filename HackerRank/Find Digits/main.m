@@ -30,8 +30,8 @@
     NSString *numberString = [number stringValue];
     for (int i = 0; i < numberString.length; i++) {
         // 48 is subtracted due to the method characterAtIndex returns an unichar
-        int currentNumber = [numberString characterAtIndex:i] - 48;
-        if ((currentNumber != 0) && ((intNumber % currentNumber) == 0)) {
+        int currentDigit = [numberString characterAtIndex:i] - 48;
+        if ((currentDigit != 0) && ((intNumber % currentDigit) == 0)) {
             totalDivisors++;
         }
     }
